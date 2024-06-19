@@ -59,13 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 container.classList.remove('hidden');
             }
         })
-        .catch(error => {
-            console.error('Ошибка при выполнении запроса:', error);
-            alert('Произошла ошибка при выполнении запроса. Пожалуйста, попробуйте позже.');
-            var container = document.querySelector('.container');
-            container.classList.add('visible');
-            container.classList.remove('hidden');
-        });
     }
 
     function cacheImages(photos) {
